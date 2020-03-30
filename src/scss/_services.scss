@@ -1,0 +1,108 @@
+.our-services{
+    background-color: #70bfff;
+}
+
+.wrapper-ser{
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+    justify-content: space-around;
+
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    margin-right: 125px;
+
+
+    &__item{
+        display: flex;
+        flex-direction: row;
+
+
+        &__text{
+            width: 300px;
+            height: 100px;
+            color: $color-black;
+            font-size: 20px;
+            background-color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10px auto;
+            box-shadow: $shadow;
+
+        }
+    }
+}
+
+.services__icon{
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-left: $color-black solid 1px;
+    background-image: url(../images/sprite.png);
+    background-color: white;
+    margin: 10px auto;
+    box-shadow: $shadow;
+
+}
+
+.services__icon--shopping {
+    background-position: 0px 0;
+}
+
+.services__icon--product{
+    background-position: -100px 0;
+
+}
+
+.services__icon--delivery{
+    background-position: -200px 0;
+
+}
+
+.services__icon--well{
+    background-position: -300px 0;
+
+}
+
+.services__name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    background-image: url(../images/tomato.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1024px){
+    .wrapper-ser{
+        flex-direction: column-reverse;
+        padding: 30px 0;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .services{
+        margin-right: 0px;
+        align-items: center;
+}
+}
+
+@media screen and (max-width:549px){
+    .services__name{
+        background-image: none;
+        width: auto;
+        height: auto;
+        font-size: 60px;
+    }
+
+}

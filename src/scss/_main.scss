@@ -1,0 +1,22 @@
+@media screen and (max-width:720px) {
+    .mainer{
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+}
+
+.mainer{
+    max-width: 1200px;
+    padding: 0 100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h2{
+    
+    font-family: $font-regular;
+    font-weight: bolder;
+    font-size: 90px;
+    color: white;
+        
+}
